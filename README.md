@@ -1,7 +1,7 @@
 
 # Thread-Safe Stack
 
-[![Build Status](https://travis-ci.com/lesari08/thread-safe-stack.svg?branch=main)](https://travis-ci.com/lesari08/thread-safe-stack)
+[![badge](https://img.shields.io/badge/license-MIT-blue)](https://github.com/thread-safe-stack/master/LICENSE)
 
 Thread-Safe Stack is a simple, C++ header-only library that provides a thread-safe implementation of a stack data structure. It allows concurrent access from multiple threads without causing data corruption or crashes.
 
@@ -10,11 +10,10 @@ Thread-Safe Stack is a simple, C++ header-only library that provides a thread-sa
 - [Introduction](#introduction)
 - [Features](#features)
 - [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Introduction
+<a name="introduction"></a>
 
 In multi-threaded applications, using a regular stack can lead to race conditions and undefined behavior when accessed concurrently. The Thread-Safe Stack library provides a safe and efficient solution to this problem by utilizing a mutex to synchronize access to the stack. This allows multiple threads to push and pop elements without conflicts or data integrity issues.
 
@@ -27,6 +26,7 @@ In multi-threaded applications, using a regular stack can lead to race condition
 - Well-documented code with simple and clear API.
 
 ## Getting Started
+
 
 ### Prerequisites
 
@@ -47,3 +47,11 @@ mkdir build && cd build
 cmake ..
 cmake --build .
 ctest
+```
+
+## License
+<a name="license"></a>
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+
+
